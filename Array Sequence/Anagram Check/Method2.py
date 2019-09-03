@@ -1,5 +1,5 @@
 def anagram(string1,string2):
-    
+
     string1=string1.replace(' ','').lower()
     string2=string2.replace(' ','').lower()
     
@@ -28,3 +28,13 @@ def anagram(string1,string2):
     
     return True
     
+
+string1 = input('Enter first word :\n')
+string2 = input('Enter second word :\n')
+
+res = anagram(string1,string2)
+print(res)
+if res == False:
+    print("Given words are not Anagram")
+else:
+    print("Given words are Anagram")
